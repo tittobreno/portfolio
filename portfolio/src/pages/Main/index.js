@@ -1,8 +1,13 @@
 import './styles.css';
-
+import Header from '../../components/Header';
 function Main() {
   return (
-    <h1>PORTFÓLIO</h1>
+    <main className='container-main'>
+      <Header />
+      <section>
+        <h1>CONTENT</h1>
+      </section>
+    </main>
   );
 }
 
