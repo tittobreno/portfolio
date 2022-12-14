@@ -1,6 +1,39 @@
 .container-header {
-  background-color: black;
-  color: #fff;
-  height: 60px;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100px;
+  width: 100%;
+  padding: 50px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.section-titles {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #e1e1e7;
+  font-size: 20px;
+}
+
+.section-tittles_item {
+  cursor: pointer;
+}
+
+.header-logo-icon {
+  width: 60px;
+  border: solid 1px #3bfefe;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: 100ms;
+}
+
+.header-logo-icon:hover {
+  box-shadow: 1px 1px 10px 2px #3bfefe;
+  transform: scale(1.1);
+  transition: ease-in;
+  transition-duration: 110ms;
 }
