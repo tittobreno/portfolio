@@ -1,3 +1,4 @@
+@import url("../../styles/global.css");
 .container-main {
   display: flex;
   flex-direction: column;
@@ -12,4 +13,25 @@
   height: 100%;
   background-image: url("../../assets/background-tech.jpg");
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  padding: 200px 100px;
+  font-family: "Poppins", sans-serif;
+}
+.primary {
+  margin-bottom: 20px;
+}
+
+.about-txt {
+  color: var(--grey-secondary);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.about-sub-txt {
+  color: var(--grey-primary);
+  font-size: 28px;
+  font-weight: 400;
 }

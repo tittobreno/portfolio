@@ -1,3 +1,4 @@
+@import url("../../styles/global.css");
 .container-header {
   display: flex;
   align-items: center;
@@ -8,23 +9,38 @@
   padding: 50px;
 
   font-family: "Poppins", sans-serif;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(7.5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  position: fixed;
+  top: 0;
 }
 
 .section-titles {
   display: flex;
   align-items: center;
   gap: 22px;
-  color: #e1e1e7;
+  color: var(--grey-primary);
   font-size: 20px;
 }
 
-.section-tittles_item {
+.section-titles_item {
+  transition: ease-out;
+  transition-duration: 160ms;
+}
+
+.section-titles_item:hover {
   cursor: pointer;
+  color: var(--grey-secondary);
+  transition: ease-in;
+  transition-duration: 160ms;
 }
 
 .header-logo-icon {
   width: 60px;
-  border: solid 1px #3bfefe;
+  border: solid 1px var(--green-neon);
   border-radius: 50%;
   cursor: pointer;
   transition: ease-out;
@@ -32,7 +48,7 @@
 }
 
 .header-logo-icon:hover {
-  box-shadow: 1px 1px 10px 2px #3bfefe;
+  box-shadow: 1px 1px 10px 2px var(--green-neon);
   transform: scale(1.1);
   transition: ease-in;
   transition-duration: 110ms;

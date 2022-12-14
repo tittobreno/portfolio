@@ -3,10 +3,12 @@ import Header from '../../components/Header';
 function Main() {
   return (
     <main className='container-main'>
-      <section className='container-about'>
-        <Header />
+      <Header />
 
-        <h3>Oi, meu nome é Breno</h3>
+      <section className='container-about'>
+        <h3 className='about-txt primary'>Olá,</h3>
+        <h3 className='about-txt secondary'>{`Eu sou o Breno, :)`}</h3>
+        <span className='about-sub-txt'>Desenvolvedor Front-end</span>
       </section>
     </main>
   );
