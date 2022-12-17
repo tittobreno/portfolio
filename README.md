@@ -1,1 +1,3 @@
-Projeto a ser desenvolvido em react
+# Portfólio
+
+Portfólio desenvolvido em React
