@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: space-between;
 
-  height: 100px;
+  height: 10rem;
   width: 100%;
-  padding: 50px;
+  padding: 5rem;
 
   font-family: "Poppins", sans-serif;
   background: rgba(255, 255, 255, 0.13);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.3);
   backdrop-filter: blur(7.5px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
@@ -21,9 +21,9 @@
 .section-titles {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 2.2rem;
   color: var(--grey-primary);
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .section-titles_item {
@@ -39,7 +39,7 @@
 }
 
 .header-logo-icon {
-  width: 60px;
+  width: 6rem;
   border: solid 1px var(--green-neon);
   border-radius: 50%;
   cursor: pointer;
