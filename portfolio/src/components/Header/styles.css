@@ -53,3 +53,24 @@
   transition: ease-in;
   transition-duration: 110ms;
 }
+
+.section-titles_menu {
+  display: none;
+  width: 6rem;
+}
+
+@media (max-width: 770px) {
+  .section-titles_item {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-titles_item {
+    display: none;
+  }
+
+  .section-titles_menu {
+    display: block;
+  }
+}

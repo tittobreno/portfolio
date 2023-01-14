@@ -35,3 +35,35 @@
   font-size: 2.8rem;
   font-weight: 400;
 }
+
+@media (max-width: 770px) {
+  .about-txt {
+    font-size: 5rem;
+  }
+
+  .about-sub-txt {
+    font-size: 2rem;
+  }
+
+  .primary {
+    margin-bottom: 1.5rem;
+  }
+
+  .container-about {
+    padding: 18rem 8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-txt {
+    font-size: 3.5rem;
+  }
+
+  .about-sub-txt {
+    font-size: 1.5rem;
+  }
+
+  .primary {
+    margin-bottom: 0.5rem;
+  }
+}
