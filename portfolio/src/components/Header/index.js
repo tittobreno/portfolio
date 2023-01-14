@@ -3,6 +3,7 @@ import CondingIcon from '../../assets/coding.png';
 import MenuIconOpen from '../../assets/menu.png';
 import MenuIconClose from '../../assets/cancel.png';
 import { useGlobal } from '../../contexts/GlobalContext';
+import { Link } from 'react-router-dom';
 const Header = () => {
     const { openMenu, setOpenMenu } = useGlobal()
     return (
@@ -15,10 +16,10 @@ const Header = () => {
                     onClick={() => setOpenMenu(!openMenu)}
                     alt='Menu'
                 />
-                <h1 className='section-titles_item'>SOBRE</h1>
-                <h1 className='section-titles_item'>HABILIDADES</h1>
-                <h1 className='section-titles_item'>PROJETOS</h1>
-                <h1 className='section-titles_item'>CONTATO</h1>
+                <a className='section-titles_item' href='#'><h1 >SOBRE</h1></a>
+                <a className='section-titles_item' href='#skills'><h1 >HABILIDADES</h1></a >
+                <a className='section-titles_item' href='#projects'><h1 >PROJETOS</h1></a>
+                <a className='section-titles_item' href='#contact'><h1 >CONTATO</h1></a>
             </section>
         </header>
     )

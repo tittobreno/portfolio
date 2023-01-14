@@ -27,6 +27,8 @@
 }
 
 .section-titles_item {
+  all: unset;
+  text-decoration: none;
   transition: ease-out;
   transition-duration: 160ms;
 }

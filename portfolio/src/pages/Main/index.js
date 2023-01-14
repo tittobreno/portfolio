@@ -19,17 +19,17 @@ function Main() {
       </section>
 
       <section className='section'>
-        <h1 className='section-title'>HABILIDADES</h1>
+        <a name='skills'><h1 className='section-title'>HABILIDADES</h1></a>
 
       </section>
 
       <section className='section'>
-        <h1 className='section-title'>PROJETOS</h1>
+        <a name='projects'><h1 className='section-title'>PROJETOS</h1></a>
 
       </section>
 
       <section className='section'>
-        <h1 className='section-title'>CONTATO</h1>
+        <a name='contact'><h1 className='section-title'>CONTATO</h1></a>
 
       </section>
     </main>
