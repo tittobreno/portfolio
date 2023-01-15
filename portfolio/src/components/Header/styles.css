@@ -21,16 +21,19 @@
 .section-titles {
   display: flex;
   align-items: center;
-  gap: 2.2rem;
   color: var(--grey-primary);
   font-size: 2rem;
 }
 
 .section-titles_item {
-  all: unset;
-  text-decoration: none;
   transition: ease-out;
   transition-duration: 160ms;
+  margin-right: 2.2rem;
+}
+
+.section-titles_link {
+  all: unset;
+  text-decoration: none;
 }
 
 .section-titles_item:hover {

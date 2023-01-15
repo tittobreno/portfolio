@@ -16,10 +16,10 @@ const Header = () => {
                     onClick={() => setOpenMenu(!openMenu)}
                     alt='Menu'
                 />
-                <a className='section-titles_item' href='#'><h1 >SOBRE</h1></a>
-                <a className='section-titles_item' href='#skills'><h1 >HABILIDADES</h1></a >
-                <a className='section-titles_item' href='#projects'><h1 >PROJETOS</h1></a>
-                <a className='section-titles_item' href='#contact'><h1 >CONTATO</h1></a>
+                <a className='section-titles_link' href='#'><h1 className='section-titles_item'>SOBRE</h1></a>
+                <a className='section-titles_link' href='#skills'><h1 className='section-titles_item'>HABILIDADES</h1></a >
+                <a className='section-titles_link' href='#projects'><h1 className='section-titles_item'>PROJETOS</h1></a>
+                <a className='section-titles_link' href='#contact'><h1 className='section-titles_item'>CONTATO</h1></a>
             </section>
         </header>
     )
