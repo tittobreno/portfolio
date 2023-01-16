@@ -1,0 +1,17 @@
+.container-project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17rem;
+  height: 22rem;
+  padding: 1rem;
+
+  font-family: "Poppins", sans-serif;
+
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0.8rem 0.5rem 3.2rem 0 rgba(2, 4, 44, 0.3);
+  backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

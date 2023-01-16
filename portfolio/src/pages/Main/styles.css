@@ -40,9 +40,18 @@
 
 .section {
   background-image: linear-gradient(to right, #327ade, #153777, #0b1133);
-  padding: 10rem;
+  padding: 5rem 10rem;
   font-family: "Poppins", sans-serif;
   border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.section-projects_main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  color: var(--grey-primary);
 }
 
 .section-title {

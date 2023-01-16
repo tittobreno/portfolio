@@ -2,8 +2,9 @@ import './styles.css';
 import Header from '../../components/Header';
 import { useGlobal } from '../../contexts/GlobalContext';
 import MenuResponsive from '../../components/MenuResponsive';
+import ProjectCard from '../../components/ProjectCard';
 function Main() {
-  const { openMenu } = useGlobal();
+  const { openMenu, projects } = useGlobal();
   return (
 
     <main className='container-main'>
@@ -20,17 +21,27 @@ function Main() {
 
       <section className='section'>
         <a name='skills'><h1 className='section-title'>HABILIDADES</h1></a>
-
       </section>
 
-      <section className='section'>
+      <section className='section section-projects'>
         <a name='projects'><h1 className='section-title'>PROJETOS</h1></a>
+        <main className='section-projects_main'>
+          {projects.map((project) => (
+
+            <ProjectCard
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              linkGithub={project.linkGithub}
+              linkDeploy={project.linkDeploy}
+            />
+          ))}
+        </main>
 
       </section>
 
       <section className='section'>
         <a name='contact'><h1 className='section-title'>CONTATO</h1></a>
-
       </section>
     </main>
   );

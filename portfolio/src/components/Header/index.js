@@ -3,7 +3,7 @@ import CondingIcon from '../../assets/coding.png';
 import MenuIconOpen from '../../assets/menu.png';
 import MenuIconClose from '../../assets/cancel.png';
 import { useGlobal } from '../../contexts/GlobalContext';
-import { Link } from 'react-router-dom';
+
 const Header = () => {
     const { openMenu, setOpenMenu } = useGlobal()
     return (
