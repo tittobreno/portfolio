@@ -13,7 +13,7 @@ function MenuResponsive() {
 
     useEffect(() => {
         handleMenu()
-    }, [])
+    })
 
     return (
         <main ref={overlayRef} className='overlay-menu-responsive'>
