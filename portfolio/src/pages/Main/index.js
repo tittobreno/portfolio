@@ -19,11 +19,11 @@ function Main() {
         <h3 className='about-txt primary'>Olá,</h3>
         <h3 className='about-txt secondary'>{`Eu sou o Breno!`}</h3>
         <span className='about-sub-txt'>Desenvolvedor Back-end</span>
-        <span name='about' className='about-sub-txt'>ABOUT-ME</span>
+        <span className='about-sub-txt'>ABOUT-ME</span>
       </section>
 
       <section className='section section-skills'>
-        <a name='skills'><h1 className='section-title'>HABILIDADES</h1></a>
+        <h1 id='skills' className='section-title'>HABILIDADES</h1>
         <main className='section-skills_main'>
           {skills.map((skill) => (
             <CardTools
@@ -37,7 +37,7 @@ function Main() {
       </section>
 
       <section className='section section-projects'>
-        <a name='projects'><h1 className='section-title'>PROJETOS</h1></a>
+        <h1 id='projects' className='section-title'>PROJETOS</h1>
         <main className='section-projects_main'>
           {projects.map((project) => (
 
@@ -54,7 +54,7 @@ function Main() {
       </section>
 
       <section className='section'>
-        <a name='contact'><h1 className='section-title'>CONTATO</h1></a>
+        <h1 id='contact' className='section-title'>CONTATO</h1>
         <div className='section-contact_main'>
           {contacts.map((contact) => (
             <Contact

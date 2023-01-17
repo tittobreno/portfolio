@@ -51,7 +51,7 @@ export const GlobalProvider = ({ children }) => {
 
     return (
         <GlobalContext.Provider
-            value={{ openMenu, setOpenMenu, projects }}
+            value={{ openMenu, setOpenMenu, projects, setProjects }}
         >
             {children}
         </GlobalContext.Provider>
