@@ -48,6 +48,7 @@ export const GlobalProvider = ({ children }) => {
             linkDeploy: 'project-example.com'
         },
     ]);
+
     return (
         <GlobalContext.Provider
             value={{ openMenu, setOpenMenu, projects }}

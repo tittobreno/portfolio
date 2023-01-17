@@ -3,6 +3,8 @@ import Header from '../../components/Header';
 import { useGlobal } from '../../contexts/GlobalContext';
 import MenuResponsive from '../../components/MenuResponsive';
 import ProjectCard from '../../components/ProjectCard';
+import CardTools from '../../components/CardTools';
+import { skills } from '../../utils/data';
 function Main() {
   const { openMenu, projects } = useGlobal();
   return (
@@ -19,8 +21,18 @@ function Main() {
         <span className='about-sub-txt'>ABOUT-ME</span>
       </section>
 
-      <section className='section'>
+      <section className='section section-skills'>
         <a name='skills'><h1 className='section-title'>HABILIDADES</h1></a>
+        <main className='section-skills_main'>
+          {skills.map((skill) => (
+            <CardTools
+              key={skill.id}
+              name={skill.name}
+              icon={skill.icon}
+            />
+
+          ))}
+        </main>
       </section>
 
       <section className='section section-projects'>

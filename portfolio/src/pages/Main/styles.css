@@ -45,7 +45,8 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.18);
 }
 
-.section-projects_main {
+.section-projects_main,
+.section-skills_main {
   display: flex;
   align-items: center;
   gap: 2rem;
