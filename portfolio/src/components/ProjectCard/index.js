@@ -3,7 +3,7 @@ import './styles.css';
 const ProjectCard = ({ name }) => {
     return (
         <main className="container-project-card">
-            <h2>{name}</h2>
+            <h2 className='project-card_title'>{name}</h2>
         </main>
     )
 };

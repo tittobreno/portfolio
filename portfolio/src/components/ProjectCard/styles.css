@@ -23,3 +23,14 @@
   transition: ease-in;
   transition-duration: 180ms;
 }
+
+@media (max-width: 450px) {
+  .container-project-card {
+    width: 12rem;
+    height: 17rem;
+  }
+
+  .project-card_title {
+    font-size: 2rem;
+  }
+}
