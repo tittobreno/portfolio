@@ -8,29 +8,34 @@ import EmailIcon from '../assets/email.png';
 import LinkedInIcon from '../assets/linkedin.png';
 import PhoneIcon from '../assets/phone.png';
 import GitHubIcon from '../assets/github.png';
+import NodeIcon from '../assets/nodejs.svg';
 export const skills = [
     {
         id: 1,
+        name: 'NODEJS',
+        icon: NodeIcon
+    }, {
+        id: 2,
         name: 'JAVASCRIPT',
         icon: JsIcon
     }, {
-        id: 2,
+        id: 3,
         name: 'POSTGRESQL',
         icon: PostgreIcon
     }, {
-        id: 2,
+        id: 4,
         name: 'REACT',
         icon: ReactIcon
     }, {
-        id: 3,
+        id: 5,
         name: 'HTML5',
         icon: HtmlIcon
     }, {
-        id: 4,
+        id: 6,
         name: 'CSS3',
         icon: CssIcon
     }, {
-        id: 5,
+        id: 7,
         name: 'GIT',
         icon: GitIcon
     }
