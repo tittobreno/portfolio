@@ -1,0 +1,23 @@
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 1rem;
+  color: var(--grey-secondary);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-img {
+  width: 6rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+}

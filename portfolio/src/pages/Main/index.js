@@ -4,7 +4,8 @@ import { useGlobal } from '../../contexts/GlobalContext';
 import MenuResponsive from '../../components/MenuResponsive';
 import ProjectCard from '../../components/ProjectCard';
 import CardTools from '../../components/CardTools';
-import { skills } from '../../utils/data';
+import { contacts, skills } from '../../utils/data';
+import Contact from '../../components/Contact';
 function Main() {
   const { openMenu, projects } = useGlobal();
   return (
@@ -54,6 +55,17 @@ function Main() {
 
       <section className='section'>
         <a name='contact'><h1 className='section-title'>CONTATO</h1></a>
+        <div className='section-contact_main'>
+          {contacts.map((contact) => (
+            <Contact
+              name={contact.name}
+              icon={contact.icon}
+              description={contact.description}
+              link={contact.link}
+            />
+
+          ))}
+        </div>
       </section>
     </main>
   );

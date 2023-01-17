@@ -1,4 +1,3 @@
-import toolIcon from '../../assets/js.svg'
 import './styles.css';
 const CardTools = ({ name, icon }) => {
     return (

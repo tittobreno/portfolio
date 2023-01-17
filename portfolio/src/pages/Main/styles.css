@@ -46,13 +46,19 @@
 }
 
 .section-projects_main,
-.section-skills_main {
+.section-skills_main,
+.section-contact_main {
   display: flex;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 
   color: var(--grey-primary);
+}
+
+.section-contact_main {
+  justify-content: space-between;
+  padding: 5rem;
 }
 
 .section-title {
