@@ -26,3 +26,18 @@
 .tool-title {
   font-size: 1.2rem;
 }
+
+@media (max-width: 450px) {
+  .container-tools {
+    width: 7rem;
+    height: 9rem;
+  }
+
+  .tool-img {
+    width: 4rem;
+  }
+
+  .tool-title {
+    font-size: 0.9rem;
+  }
+}

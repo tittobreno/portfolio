@@ -86,14 +86,18 @@
 
 @media (max-width: 450px) {
   .about-txt {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   .about-sub-txt {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .primary {
     margin-bottom: 0.5rem;
+  }
+
+  .section {
+    padding: 3rem 5rem;
   }
 }

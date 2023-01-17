@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  z-index: 99;
   height: 100%;
 
   position: fixed;
