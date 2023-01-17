@@ -58,6 +58,7 @@ function Main() {
         <div className='section-contact_main'>
           {contacts.map((contact) => (
             <Contact
+              key={contact.name}
               name={contact.name}
               icon={contact.icon}
               description={contact.description}
