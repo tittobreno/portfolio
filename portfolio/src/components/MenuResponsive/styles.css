@@ -27,6 +27,8 @@
   font-size: 3rem;
   transition: ease-out;
   transition-duration: 160ms;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .section-menu_item:hover {
