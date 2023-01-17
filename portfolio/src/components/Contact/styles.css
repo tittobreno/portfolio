@@ -9,7 +9,6 @@
   padding: 1rem;
   color: var(--grey-secondary);
   cursor: pointer;
-  text-decoration: none;
   transition: ease-out;
   transition-duration: 180ms;
 }
