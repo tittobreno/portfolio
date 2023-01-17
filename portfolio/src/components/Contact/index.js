@@ -1,24 +1,25 @@
 import './styles.css';
-const Contact = ({ name, icon, description, link }) => {
+const Contact = ({ icon, description, link }) => {
     if (link) {
         return (
+            <div className="container-contact">
+                <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href={link}
+                    className="container-contact"
+                >
+                    <img className='contact-img' src={icon} alt='icon' />
+                    <p>{description}</p>
+                </a>
+            </div>
 
-            <a
-                target='_blank'
-                href={link}
-                className="container-contact"
-            >
-                <img className='contact-img' src={icon} />
-                <p>{description}</p>
-            </a>
         )
     } else {
         return (
 
-            <div
-                className="container-contact"
-            >
-                <img className='contact-img' src={icon} />
+            <div className="container-contact">
+                <img className='contact-img' src={icon} alt='icon' />
                 <p>{description}</p>
             </div>
         )

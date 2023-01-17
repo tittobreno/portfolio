@@ -1,6 +1,6 @@
 import './styles.css';
 
-const ProjectCard = ({ id, name, description, linkGithub, linkDeploy }) => {
+const ProjectCard = ({ name }) => {
     return (
         <main className="container-project-card">
             <h2>{name}</h2>
