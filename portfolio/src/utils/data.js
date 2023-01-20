@@ -1,14 +1,15 @@
-import JsIcon from '../assets/js.svg';
-import PostgreIcon from '../assets/postgresql.svg';
-import ReactIcon from '../assets/react.svg';
-import HtmlIcon from '../assets/html5.svg';
-import CssIcon from '../assets/css3.svg';
-import GitIcon from '../assets/git.svg';
-import EmailIcon from '../assets/email.png';
-import LinkedInIcon from '../assets/linkedin.png';
-import PhoneIcon from '../assets/phone.png';
-import GitHubIcon from '../assets/github.png';
-import NodeIcon from '../assets/nodejs.svg';
+import JsIcon from '../assets/skills/js.svg';
+import PostgreIcon from '../assets/skills/postgresql.svg';
+import ReactIcon from '../assets/skills/react.svg';
+import HtmlIcon from '../assets/skills/html5.svg';
+import CssIcon from '../assets/skills/css3.svg';
+import GitIcon from '../assets/contact/git.svg';
+import EmailIcon from '../assets/contact/email.png';
+import LinkedInIcon from '../assets/contact/linkedin.png';
+import PhoneIcon from '../assets/contact/phone.png';
+import GitHubIcon from '../assets/contact/github.png';
+import NodeIcon from '../assets/skills/nodejs.svg';
+import TypeIcon from '../assets/skills/ts.svg';
 export const skills = [
     {
         id: 1,
@@ -38,6 +39,11 @@ export const skills = [
         id: 7,
         name: 'GIT',
         icon: GitIcon
+    },
+    {
+        id: 8,
+        name: 'TYPESCRIPT',
+        icon: TypeIcon
     }
 ]
 

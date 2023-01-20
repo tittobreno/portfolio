@@ -18,7 +18,7 @@ function Main() {
 
         <h3 className='about-txt primary'>Olá,</h3>
         <h3 className='about-txt secondary'>{`Eu sou o Breno!`}</h3>
-        <span className='about-sub-txt'>Desenvolvedor Back-end</span>
+        <span className='about-sub-txt'>Desenvolvedor Full-Stack</span>
         <span id='about' className='about-sub-txt'>ABOUT-ME</span>
       </section>
 
