@@ -25,9 +25,9 @@ function Main() {
       <section className='section section-skills'>
         <h1 id='skills' className='section-title'>HABILIDADES</h1>
         <main className='section-skills_main'>
-          {skills.map((skill) => (
+          {skills.map((skill, i) => (
             <CardTools
-              key={skill.id}
+              key={`${skill} - ${i}`}
               name={skill.name}
               icon={skill.icon}
             />
