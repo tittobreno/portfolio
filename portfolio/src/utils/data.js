@@ -3,7 +3,7 @@ import PostgreIcon from '../assets/skills/postgresql.svg';
 import ReactIcon from '../assets/skills/react.svg';
 import HtmlIcon from '../assets/skills/html5.svg';
 import CssIcon from '../assets/skills/css3.svg';
-import GitIcon from '../assets/contact/git.svg';
+import GitIcon from '../assets/skills/git.svg';
 import EmailIcon from '../assets/contact/email.png';
 import LinkedInIcon from '../assets/contact/linkedin.png';
 import PhoneIcon from '../assets/contact/phone.png';
