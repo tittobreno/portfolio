@@ -64,6 +64,10 @@
   width: 6rem;
 }
 
+.header-button_responsive {
+  all: unset;
+}
+
 @media (max-width: 770px) {
   .section-titles_item {
     font-size: 1.9rem;
