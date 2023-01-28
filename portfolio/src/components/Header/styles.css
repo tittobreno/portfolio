@@ -68,18 +68,30 @@
   all: unset;
 }
 
+.hide {
+  display: none;
+}
+
 @media (max-width: 770px) {
   .section-titles_item {
     font-size: 1.9rem;
   }
-}
 
-@media (max-width: 600px) {
-  .section-titles_item {
-    display: none;
-  }
+  @media (max-width: 600px) {
+    .section-titles_item {
+      display: none;
+    }
 
-  .section-titles_menu {
-    display: block;
+    .section-titles_menu {
+      display: block;
+    }
+
+    .container-header {
+      justify-content: end;
+    }
+
+    .header-logo-icon {
+      display: none;
+    }
   }
 }

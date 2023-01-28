@@ -4,12 +4,40 @@ import MenuIconOpen from "../../assets/menu.png";
 import MenuIconClose from "../../assets/cancel.png";
 import { useGlobal } from "../../contexts/GlobalContext";
 import { FiMenu, FiX } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
+import clsx from "clsx";
 const Header = () => {
   const { openMenu, setOpenMenu } = useGlobal();
+  const [isIscrolled, setIsScrolled] = useState(false);
+  const { scrollY } = useScroll();
 
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  });
+
+  const hide = {
+    opacity: 0,
+    transition: { duration: 0.8 },
+    transitionEnd: {
+      display: "none",
+    },
+  };
+
+  const show = {
+    opacity: 1,
+    transition: { duration: 0.8 },
+    display: "flex",
+  };
   return (
-    <header className="container-header">
+    <motion.header
+      animate={isIscrolled ? hide : show}
+      className={"container-header"}
+    >
       <img className="header-logo-icon" src={CondingIcon} alt="Logo" />
       <section className="section-titles">
         <motion.button
@@ -37,7 +65,7 @@ const Header = () => {
           <h1 className="section-titles_item">CONTATO</h1>
         </a>
       </section>
-    </header>
+    </motion.header>
   );
 };
 
