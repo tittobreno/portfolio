@@ -13,11 +13,6 @@
   transition-duration: 180ms;
 }
 
-.container-contact:hover {
-  transition: ease-in;
-  transition-duration: 180ms;
-}
-
 .contact-img {
   width: 6rem;
   border-radius: 0.5rem;
