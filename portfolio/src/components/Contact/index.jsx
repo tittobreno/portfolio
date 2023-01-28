@@ -35,7 +35,7 @@ const Contact = ({ name, icon, description, link }) => {
     );
   } else {
     return (
-      <div>
+      <div style={{ display: "flex", alignContent: "center" }}>
         <section className="container-contact" style={{ cursor: "default" }}>
           <IoMailOutline size={50} />
           <p style={{ cursor: "text" }}>{description}</p>

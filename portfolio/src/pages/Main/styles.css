@@ -83,6 +83,11 @@
   .container-about {
     padding: 18rem 8rem;
   }
+
+  .section-contact_main {
+    justify-content: center;
+    padding: 5rem;
+  }
 }
 
 @media (max-width: 450px) {
