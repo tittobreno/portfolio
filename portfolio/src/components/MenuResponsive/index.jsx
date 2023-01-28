@@ -11,8 +11,6 @@ function MenuResponsive() {
         }
     };
 
-
-
     useEffect(() => {
         handleMenu()
     })
