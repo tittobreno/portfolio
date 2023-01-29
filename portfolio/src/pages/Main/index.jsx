@@ -6,8 +6,16 @@ import ProjectCard from "../../components/ProjectCard";
 import CardTools from "../../components/CardTools";
 import { contacts, skills } from "../../utils/data";
 import Contact from "../../components/Contact";
+import { useEffect } from "react";
 function Main() {
   const { openMenu, projects } = useGlobal();
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [openMenu]);
   return (
     <main className="container-main">
       <Header />
