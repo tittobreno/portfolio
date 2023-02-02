@@ -13,14 +13,18 @@
 .container-about {
   width: 100%;
   min-height: 100%;
-  background-image: url("../../assets/background-tech.jpg");
-  background-size: cover;
+  background-image: linear-gradient(to right, #327ade, #153777, #0b1133);
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   padding: 20rem 10rem;
   font-family: "Poppins", sans-serif;
   border-bottom: 2px solid rgba(255, 255, 255, 0.18);
 }
+.icon-page {
+  width: 40%;
+  filter: drop-shadow(8px 8px 10px #090f2c);
+}
+
 .primary {
   margin-bottom: 2rem;
 }
@@ -29,7 +33,7 @@
   color: var(--grey-secondary);
   font-size: 6rem;
   font-weight: 700;
-  line-height: 3.8rem;
+  line-height: 3.5rem;
 }
 
 .about-sub-txt {
@@ -66,10 +70,21 @@
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 970px) {
+  .about-txt {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-txt {
+    font-size: 4rem;
+  }
+}
 
 @media (max-width: 770px) {
   .about-txt {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
   .about-sub-txt {
@@ -90,12 +105,22 @@
   }
 }
 
+@media (max-width: 600px) {
+  .icon-page {
+    display: none;
+  }
+
+  .about-txt {
+    font-size: 4rem;
+  }
+}
+
 @media (max-width: 450px) {
   .container-about {
     padding: 15rem 5rem;
   }
   .about-txt {
-    font-size: 3.4rem;
+    font-size: 4rem;
   }
 
   .about-sub-txt {

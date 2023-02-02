@@ -7,6 +7,7 @@ import CardTools from "../../components/CardTools";
 import { contacts, skills } from "../../utils/data";
 import Contact from "../../components/Contact";
 import { useEffect } from "react";
+import IconPage from "../../assets/icon-page.svg";
 function Main() {
   const { openMenu, projects } = useGlobal();
   useEffect(() => {
@@ -22,12 +23,15 @@ function Main() {
 
       <section className="container-about">
         {openMenu && <MenuResponsive />}
+        <div>
+          <h3 className="about-txt primary">Olá,</h3>
+          <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
+          <span id="about" className="about-sub-txt">
+            ABOUT-ME
+          </span>
+        </div>
 
-        <h3 className="about-txt primary">Olá,</h3>
-        <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
-        <span id="about" className="about-sub-txt">
-          ABOUT-ME
-        </span>
+        <img className="icon-page" src={IconPage} alt="Ícone" />
       </section>
 
       <section className="section section-skills">
