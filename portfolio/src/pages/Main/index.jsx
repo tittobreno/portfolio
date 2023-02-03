@@ -24,11 +24,24 @@ function Main() {
       <section className="container-about">
         {openMenu && <MenuResponsive />}
         <div>
-          <h3 className="about-txt primary">Olá,</h3>
+          <h3 id="about" className="about-txt primary">
+            Olá,
+          </h3>
           <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
-          <span id="about" className="about-sub-txt">
-            ABOUT-ME
-          </span>
+          <p className="about-sub-txt">Desenvolvedor Full-Stack</p>
+          <div>
+            <p className="about-me">
+              Meu objetivo como desenvolvedor de software é trazer soluções
+              práticas e efetivas por meio da tecnologia! <br />
+              Tenho convicção no poder transformador da tecnologia, e essa é a
+              minha motivação para entregar o melhor resultado em tudo que me
+              proponho a fazer.
+            </p>
+            <p className="about-quote">
+              “O sucesso é a soma de pequenos esforços repetidos dia após dia.”
+              <p>- Robert Collier</p>
+            </p>
+          </div>
         </div>
 
         <img className="icon-page" src={IconPage} alt="Ícone" />

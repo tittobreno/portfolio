@@ -1,5 +1,5 @@
 @import url("../../styles/global.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Carme&family=Inter+Tight:wght@300&display=swap");
 .container-main {
   display: flex;
   flex-direction: column;
@@ -33,13 +33,33 @@
   color: var(--grey-secondary);
   font-size: 6rem;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 4rem;
 }
 
 .about-sub-txt {
   color: var(--grey-primary);
   font-size: 2.8rem;
   font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.about-me {
+  color: var(--grey-secondary);
+  font-size: 1.8rem;
+  color: var(--grey-secondary);
+  filter: drop-shadow(2px 2px 5px #000);
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.about-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  font-family: "Inter Tight", sans-serif;
+  color: var(--grey-primary);
 }
 
 .section {
