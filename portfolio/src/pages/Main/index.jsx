@@ -25,13 +25,16 @@ function Main() {
       <section className="section-profile">
         {openMenu && <MenuResponsive />}
         <div className="profile_introduction">
-          <h3 className="about-txt primary">Olá,</h3>
-          <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
-          <strong className="about-sub-txt">Desenvolvedor Full-Stack</strong>
-          <div>
-            <p className="about-quote">
+          <section>
+            <h3 className="about-txt primary">Olá,</h3>
+            <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
+            <strong className="about-sub-txt">Desenvolvedor Full-Stack</strong>
+          </section>
+
+          <div className="about-quote">
+            <p>
               “O sucesso é a soma de pequenos esforços repetidos dia após dia.”
-              <p>- Robert Collier</p>
+              <br />- Robert Collier
             </p>
           </div>
         </div>
