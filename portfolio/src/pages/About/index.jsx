@@ -1,6 +1,10 @@
 import Header from "../../components/Header";
 import "./styles.css";
+import { useGlobal } from "../../contexts/GlobalContext";
+import MenuResponsive from "../../components/MenuResponsive";
 const About = () => {
+  const { openMenu } = useGlobal();
+
   return (
     <main className="container-about">
       <Header />
@@ -13,6 +17,7 @@ const About = () => {
           fazer.
         </h1>
       </section>
+      {openMenu && <MenuResponsive />}
     </main>
   );
 };
