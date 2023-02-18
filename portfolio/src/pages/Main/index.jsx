@@ -8,6 +8,7 @@ import { contacts, skills } from "../../utils/data";
 import Contact from "../../components/Contact";
 import { useEffect } from "react";
 import IconPage from "../../assets/icon-page.svg";
+
 function Main() {
   const { openMenu, projects } = useGlobal();
   useEffect(() => {
@@ -21,22 +22,15 @@ function Main() {
     <main className="container-main">
       <Header />
 
-      <section className="container-about">
+      <section className="section-profile">
         {openMenu && <MenuResponsive />}
         <div>
           <h3 id="about" className="about-txt primary">
             Olá,
           </h3>
           <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
-          <p className="about-sub-txt">Desenvolvedor Full-Stack</p>
+          <strong className="about-sub-txt">Desenvolvedor Full-Stack</strong>
           <div>
-            <p className="about-me">
-              Meu objetivo como desenvolvedor de software é trazer soluções
-              práticas e efetivas por meio da tecnologia! <br />
-              Tenho convicção no poder transformador da tecnologia, e essa é a
-              minha motivação para entregar o melhor resultado em tudo que me
-              proponho a fazer.
-            </p>
             <p className="about-quote">
               “O sucesso é a soma de pequenos esforços repetidos dia após dia.”
               <p>- Robert Collier</p>

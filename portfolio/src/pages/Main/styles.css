@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.container-about {
+.section-profile {
   width: 100%;
   min-height: 100%;
   background-image: linear-gradient(to right, #327ade, #153777, #0b1133);
@@ -90,6 +90,23 @@
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
+/* .arrow-up {
+  color: red;
+  animation: animate-arrow 2s infinite;
+  animation-direction: alternate;
+  position: relative;
+} */
+
+/* @keyframes animate-arrow {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+} */
+
 @media (max-width: 970px) {
   .about-txt {
     font-size: 5rem;

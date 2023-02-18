@@ -1,0 +1,14 @@
+.container-about {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  min-height: calc(100vh - 10rem);
+  background-image: linear-gradient(to right, #327ade, #153777, #0b1133);
+}
+
+.section-main {
+  padding: 20rem 10rem;
+  width: 100%;
+  height: 100vh;
+}

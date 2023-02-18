@@ -72,6 +72,16 @@
   display: none;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-list-item {
+  list-style: none;
+}
+
 @media (max-width: 770px) {
   .section-titles_item {
     font-size: 1.9rem;
