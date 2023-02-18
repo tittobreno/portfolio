@@ -132,7 +132,7 @@
     margin-bottom: 1.5rem;
   }
 
-  .container-about {
+  .section-profile {
     padding: 18rem 8rem;
   }
 
@@ -153,9 +153,10 @@
 }
 
 @media (max-width: 450px) {
-  .container-about {
+  .section-profile {
     padding: 15rem 5rem;
   }
+
   .about-txt {
     font-size: 4rem;
   }

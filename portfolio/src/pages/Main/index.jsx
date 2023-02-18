@@ -24,10 +24,8 @@ function Main() {
 
       <section className="section-profile">
         {openMenu && <MenuResponsive />}
-        <div>
-          <h3 id="about" className="about-txt primary">
-            Olá,
-          </h3>
+        <div className="profile_introduction">
+          <h3 className="about-txt primary">Olá,</h3>
           <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
           <strong className="about-sub-txt">Desenvolvedor Full-Stack</strong>
           <div>
