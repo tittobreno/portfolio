@@ -1,8 +1,8 @@
-import "./styles.css";
-import { useEffect, useRef } from "react";
-import { useGlobal } from "../../contexts/GlobalContext";
 import { motion } from "framer-motion";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useGlobal } from "../../contexts/GlobalContext";
+import "./styles.css";
 
 function MenuResponsive() {
   const navigate = useNavigate();

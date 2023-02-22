@@ -1,13 +1,13 @@
-import "./styles.css";
-import Header from "../../components/Header";
-import { useGlobal } from "../../contexts/GlobalContext";
-import MenuResponsive from "../../components/MenuResponsive";
-import ProjectCard from "../../components/ProjectCard";
-import CardTools from "../../components/CardTools";
-import { contacts, skills } from "../../utils/data";
-import Contact from "../../components/Contact";
 import { useEffect } from "react";
 import IconPage from "../../assets/icon-page.svg";
+import CardTools from "../../components/CardTools";
+import Contact from "../../components/Contact";
+import Header from "../../components/Header";
+import MenuResponsive from "../../components/MenuResponsive";
+import ProjectCard from "../../components/ProjectCard";
+import { useGlobal } from "../../contexts/GlobalContext";
+import { contacts, skills } from "../../utils/data";
+import "./styles.css";
 
 function Main() {
   const { openMenu, projects } = useGlobal();
@@ -27,7 +27,7 @@ function Main() {
         <div className="profile_introduction">
           <section>
             <h3 className="about-txt primary">Olá,</h3>
-            <h3 className="about-txt secondary">{`Eu sou o Breno!`}</h3>
+            <h3 className="about-txt secondary">Eu sou o Breno!</h3>
             <strong className="about-sub-txt">Desenvolvedor Full-Stack</strong>
           </section>
 

@@ -1,12 +1,10 @@
-import "./styles.css";
-import { RxLinkedinLogo, RxEnvelopeClosed, RxGithubLogo } from "react-icons/rx";
-import { FaWhatsappSquare } from "react-icons/fa";
 import {
-  IoMailOutline,
-  IoLogoWhatsapp,
-  IoLogoLinkedin,
   IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoWhatsapp,
+  IoMailOutline,
 } from "react-icons/io5";
+import "./styles.css";
 const Contact = ({ name, icon, description, link }) => {
   const setIcon = () => {
     if (name === "LinkedIn") {

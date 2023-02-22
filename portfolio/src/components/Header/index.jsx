@@ -1,13 +1,10 @@
-import "./styles.css";
-import CondingIcon from "../../assets/coding.png";
-import MenuIconOpen from "../../assets/menu.png";
-import MenuIconClose from "../../assets/cancel.png";
-import { useGlobal } from "../../contexts/GlobalContext";
-import { FiMenu, FiX } from "react-icons/fi";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
-import clsx from "clsx";
-import { useNavigate, useMatch, useLocation } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
+import { useLocation, useNavigate } from "react-router-dom";
+import CondingIcon from "../../assets/coding.png";
+import { useGlobal } from "../../contexts/GlobalContext";
+import "./styles.css";
 
 const Header = () => {
   const navigate = useNavigate();
