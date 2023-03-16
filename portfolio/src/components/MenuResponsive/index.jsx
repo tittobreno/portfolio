@@ -21,13 +21,13 @@ function MenuResponsive() {
   });
 
   return (
-    <nav ref={overlayRef} className="overlay-menu-responsive">
+    <nav ref={overlayRef} className="overlay__menu-responsive">
       {isInAbout ? (
         <h1
           onClick={() => {
             navigate("/"), setOpenMenu(false);
           }}
-          className="section-menu_item"
+          className="menu-responsive__item"
         >
           HOME
         </h1>
@@ -38,7 +38,7 @@ function MenuResponsive() {
             onClick={() => {
               navigate("/about"), setOpenMenu(false);
             }}
-            className="section-menu_item"
+            className="menu-responsive__item"
           >
             SOBRE
           </motion.h1>
@@ -46,7 +46,7 @@ function MenuResponsive() {
             whileTap={{ scale: 1.1 }}
             onClick={() => setOpenMenu(false)}
             href="#skills"
-            className="section-menu_item"
+            className="menu-responsive__item"
           >
             HABILIDADES
           </motion.a>
@@ -54,17 +54,9 @@ function MenuResponsive() {
             whileTap={{ scale: 1.1 }}
             onClick={() => setOpenMenu(false)}
             href="#projects"
-            className="section-menu_item"
+            className="menu-responsive__item"
           >
             PROJETOS
-          </motion.a>
-          <motion.a
-            whileTap={{ scale: 1.1 }}
-            onClick={() => setOpenMenu(false)}
-            href="#contact"
-            className="section-menu_item"
-          >
-            CONTATO
           </motion.a>
         </>
       )}

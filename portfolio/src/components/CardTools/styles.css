@@ -1,4 +1,4 @@
-.container-tools {
+.tools {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,26 +18,26 @@
   color: var(--grey-secondary);
 }
 
-.tool-img {
+.tools__img {
   width: 6rem;
   border-radius: 0.5rem;
 }
 
-.tool-title {
+.tools__title {
   font-size: 1.2rem;
 }
 
 @media (max-width: 450px) {
-  .container-tools {
+  .tools {
     width: 7rem;
     height: 9rem;
   }
 
-  .tool-img {
+  .tools__img {
     width: 4rem;
   }
 
-  .tool-title {
+  .tools__title {
     font-size: 0.9rem;
   }
 }

@@ -61,7 +61,7 @@ function Home() {
         </main>
       </section>
 
-      <section className="section projects">
+      <section className="section">
         <h1 id="projects" className="section__title">
           PROJETOS
         </h1>
