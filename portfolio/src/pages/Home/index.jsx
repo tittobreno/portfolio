@@ -9,7 +9,7 @@ import { useGlobal } from "../../contexts/GlobalContext";
 import { contacts, skills } from "../../utils/data";
 import "./styles.css";
 
-function Main() {
+function Home() {
   const { openMenu, projects } = useGlobal();
   useEffect(() => {
     if (openMenu) {
@@ -19,7 +19,7 @@ function Main() {
     }
   }, [openMenu]);
   return (
-    <main className="container-main">
+    <main className="home">
       <Header />
 
       <section className="intro">
@@ -46,11 +46,11 @@ function Main() {
         />
       </section>
 
-      <section className="section section-skills">
-        <h1 id="skills" className="section-title">
+      <section className="section skills">
+        <h1 id="skills" className="section__title">
           HABILIDADES
         </h1>
-        <main className="section-skills_main">
+        <main className="skills__main">
           {skills.map((skill, i) => (
             <CardTools
               key={`${skill} - ${i}`}
@@ -61,11 +61,11 @@ function Main() {
         </main>
       </section>
 
-      <section className="section section-projects">
-        <h1 id="projects" className="section-title">
+      <section className="section projects">
+        <h1 id="projects" className="section__title">
           PROJETOS
         </h1>
-        <main className="section-projects_main">
+        <main className="projects__main">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
@@ -81,4 +81,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

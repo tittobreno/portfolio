@@ -1,6 +1,6 @@
 @import url("../../styles/global.css");
 @import url("https://fonts.googleapis.com/css2?family=Carme&family=Inter+Tight:wght@300&display=swap");
-.container-main {
+.home {
   display: flex;
   flex-direction: column;
 
@@ -80,8 +80,8 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.18);
 }
 
-.section-projects_main,
-.section-skills_main {
+.projects__main,
+.skills__main {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -90,7 +90,7 @@
   color: var(--grey-primary);
 }
 
-.section-title {
+.section__title {
   color: var(--grey-primary);
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -157,8 +157,8 @@
     padding: 3rem 5rem;
   }
 
-  .section-skills_main,
-  .section-projects_main {
+  .skills__main,
+  .projects__main {
     justify-content: space-between;
   }
 }
