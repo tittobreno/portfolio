@@ -81,8 +81,7 @@
 }
 
 .section-projects_main,
-.section-skills_main,
-.section-contact_main {
+.section-skills_main {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -91,32 +90,11 @@
   color: var(--grey-primary);
 }
 
-.section-contact_main {
-  justify-content: space-between;
-  padding: 5rem;
-}
-
 .section-title {
   color: var(--grey-primary);
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
-/* .arrow-up {
-  color: red;
-  animation: animate-arrow 2s infinite;
-  animation-direction: alternate;
-  position: relative;
-} */
-
-/* @keyframes animate-arrow {
-  from {
-    top: 0px;
-  }
-  to {
-    top: 20px;
-  }
-} */
 
 @media (max-width: 970px) {
   .about-txt {
@@ -145,11 +123,6 @@
 
   .section-profile {
     padding: 18rem 8rem;
-  }
-
-  .section-contact_main {
-    justify-content: center;
-    padding: 5rem;
   }
 }
 
@@ -182,11 +155,6 @@
 
   .section {
     padding: 3rem 5rem;
-  }
-
-  .section-contact_main {
-    flex-direction: column;
-    padding: 3rem;
   }
 
   .section-skills_main,

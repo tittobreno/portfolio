@@ -73,23 +73,6 @@ function Main() {
           ))}
         </main>
       </section>
-
-      <section className="section">
-        <h1 id="contact" className="section-title">
-          CONTATO
-        </h1>
-        <div className="section-contact_main">
-          {contacts.map((contact) => (
-            <Contact
-              key={contact.name}
-              name={contact.name}
-              icon={contact.icon}
-              description={contact.description}
-              link={contact.link}
-            />
-          ))}
-        </div>
-      </section>
     </main>
   );
 }
