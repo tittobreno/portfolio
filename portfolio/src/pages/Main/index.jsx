@@ -22,24 +22,28 @@ function Main() {
     <main className="container-main">
       <Header />
 
-      <section className="section-profile">
+      <section className="intro">
         {openMenu && <MenuResponsive />}
-        <div className="profile_introduction">
+        <div className="intro__left">
           <section>
-            <h3 className="about-txt primary">Olá,</h3>
-            <h3 className="about-txt secondary">Eu sou o Breno!</h3>
-            <strong className="about-sub-txt">Desenvolvedor Full-Stack</strong>
+            <h3 className="intro__title primary">Olá,</h3>
+            <h3 className="intro__title secondary">Eu sou o Breno!</h3>
+            <strong className="intro__sub-title">
+              Desenvolvedor Full-Stack
+            </strong>
           </section>
 
-          <div className="about-quote">
-            <p>
-              “O sucesso é a soma de pequenos esforços repetidos dia após dia.”
-              <br />- Robert Collier
-            </p>
-          </div>
+          <p className="intro__citation">
+            “O sucesso é a soma de pequenos esforços repetidos dia após dia.”
+            <br />- Robert Collier
+          </p>
         </div>
 
-        <img className="icon-page" src={IconPage} alt="Ícone" />
+        <img
+          className="intro__img"
+          src={IconPage}
+          alt="Imagem de uma pessoa no computador."
+        />
       </section>
 
       <section className="section section-skills">
