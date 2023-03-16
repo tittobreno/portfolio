@@ -1,4 +1,4 @@
-.container-project-card {
+.projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,19 +18,19 @@
   transition-duration: 180ms;
 }
 
-.container-project-card:hover {
+.projects:hover {
   transform: scale(1.03);
   transition: ease-in;
   transition-duration: 180ms;
 }
 
 @media (max-width: 450px) {
-  .container-project-card {
+  .projects {
     width: 12rem;
     height: 17rem;
   }
 
-  .project-card_title {
+  .projects__title {
     font-size: 2rem;
   }
 }

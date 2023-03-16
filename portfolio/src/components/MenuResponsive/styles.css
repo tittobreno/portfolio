@@ -1,5 +1,5 @@
 @import url("../../styles/global.css");
-.overlay-menu-responsive {
+.overlay__menu-responsive {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.section-menu_item {
+.menu-responsive__item {
   gap: 2.2rem;
   color: var(--grey-primary);
   font-size: 3rem;
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.section-menu_item:hover {
+.menu-responsive__item:hover {
   color: var(--grey-secondary);
   transition: ease-in;
   transition-duration: 160ms;

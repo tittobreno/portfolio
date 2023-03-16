@@ -37,48 +37,50 @@ const Header = () => {
   };
 
   return (
-    <motion.header
-      animate={isIscrolled ? hide : show}
-      className={"container-header"}
-    >
-      <img className="header-logo-icon" src={CondingIcon} alt="Logo" />
-      <nav className="section-titles">
+    <motion.header animate={isIscrolled ? hide : show} className="header">
+      <img className="header__logo" src={CondingIcon} alt="Logo" />
+      <nav className="header__navigation">
         <motion.button
-          className="header-button_responsive"
+          className="header__button-responsive"
           onClick={() => setOpenMenu(!openMenu)}
           whileTap={{ scale: 1.1 }}
         >
           {openMenu ? (
-            <FiX className="section-titles_menu" size={40} />
+            <FiX className="header__button--close" size={40} />
           ) : (
-            <FiMenu className="section-titles_menu" size={40} />
+            <FiMenu className="header__button--open" size={40} />
           )}
         </motion.button>
         {isInAbout ? (
-          <ul className="navigation">
-            <li onClick={() => navigate("/")} className="navigation-list-item">
-              <h1 className="section-titles_item">HOME</h1>
+          <ul className="header__navigation-list">
+            <li
+              onClick={() => navigate("/")}
+              className="header__navigation-item"
+            >
+              <h1 className="header__navigation-title">HOME</h1>
             </li>
           </ul>
         ) : (
-          <ul className="navigation">
+          <ul className="header__navigation-list">
             <li
               onClick={() => navigate("/about")}
-              className="navigation-list-item"
+              className="header__navigation-item"
             >
-              <h1 className="section-titles_item">SOBRE</h1>
+              <h1 className="header__navigation-title">SOBRE</h1>
             </li>
 
-            <a className="section-titles_link" href="#skills">
-              <h1 className="section-titles_item">HABILIDADES</h1>
+            <a
+              className="header__navigation-link header__navigation-item"
+              href="#skills"
+            >
+              <h1 className="header__navigation-title">HABILIDADES</h1>
             </a>
 
-            <a className="section-titles_link" href="#projects">
-              <h1 className="section-titles_item">PROJETOS</h1>
-            </a>
-
-            <a className="section-titles_link" href="#contact">
-              <h1 className="section-titles_item">CONTATO</h1>
+            <a
+              className="header__navigation-link header__navigation-item"
+              href="#projects"
+            >
+              <h1 className="header__navigation-title">PROJETOS</h1>
             </a>
           </ul>
         )}
